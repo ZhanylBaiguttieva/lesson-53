@@ -8,9 +8,16 @@ const Task: React.FC<Props> = ({
                                  onDelete,
                                }) => {
   return (
-    <div className="task">
-      <p>{info}</p>
-      <button onClick={onDelete}>Delete</button>
+    <div className='card m-2'>
+      <div className='row'>
+        <div className='col'>
+          <p className='fs-5'>{info}</p>
+        </div>
+        <div className='col'>
+          <button className='btn btn-secondary'
+                  onClick={onDelete}>Delete</button>
+        </div>
+      </div>
     </div>
   );
 };
